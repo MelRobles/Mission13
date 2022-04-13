@@ -32,7 +32,7 @@ namespace MySQLBowler.Controllers
         [HttpGet]
         public IActionResult Form() 
         {
-            ViewBag.Teams = _context.Teams.ToList();
+            //ViewBag.Teams = _context.Teams.ToList();
             return View();
         }
 
@@ -47,7 +47,7 @@ namespace MySQLBowler.Controllers
             }
             else
             {
-                ViewBag.Teams = _context.Teams.ToList();
+                //ViewBag.Teams = _context.Teams.ToList();
                 return View("Form");
             }
             

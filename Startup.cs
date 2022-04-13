@@ -31,6 +31,8 @@ namespace MySQLBowler
             {
                 options.UseMySql(Configuration["ConnectionStrings:BowlerDbConnection"]);
             });
+
+            services.AddDbContext<BowlerDbContext>(options => options.UseMySql("Default"));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

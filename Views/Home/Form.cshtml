@@ -40,10 +40,10 @@
         <label asp-for="TeamID">Bowler Team</label>
         <select asp-for="TeamID">
             <option value="">Select a Team</option>
-            @foreach (Team t in ViewBag.Teams)
+            @*@foreach (Team t in ViewBag.Teams)
             {
                 <option value="@t.TeamID">@t.TeamName</option>
-            }
+            }*@
         </select>
         <button class="btn btn-primary" type="submit">Submit</button>
     </form>
