@@ -13,21 +13,21 @@ namespace AspNetCore
     using Microsoft.AspNetCore.Mvc.Rendering;
     using Microsoft.AspNetCore.Mvc.ViewFeatures;
 #nullable restore
-#line 1 "C:\Users\tweet\source\repos\MySQLBowler\Views\_ViewImports.cshtml"
+#line 3 "C:\Users\tweet\source\repos\MySQLBowler\Views\_ViewImports.cshtml"
 using MySQLBowler;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "C:\Users\tweet\source\repos\MySQLBowler\Views\_ViewImports.cshtml"
+#line 4 "C:\Users\tweet\source\repos\MySQLBowler\Views\_ViewImports.cshtml"
 using MySQLBowler.Models;
 
 #line default
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"7091c65830b0329e613be026ede8a57552863778", @"/Views/_ViewStart.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"12e8a93d74e96854f01a1c040957c0b6d6d3388b", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"2607a37131c62926f9d019d820001a7d00258262", @"/Views/_ViewImports.cshtml")]
     public class Views__ViewStart : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         #pragma warning disable 1998

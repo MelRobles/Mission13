@@ -2,9 +2,8 @@
     ViewData["Title"] = "Home Page";
 }
 @model List<Bowler>
-
 <h1>Bowlers</h1>
-
+<br />
 <div class="float-right">
     <a class="btn btn-primary" asp-action="Form">Add Bowler</a>
     <a class="btn btn-danger" href="#">Delete Bowler</a>
@@ -29,18 +28,18 @@
     <tbody>
         @foreach (var b in Model)
         {
-        <tr>
-            <td>@b.BowlerID</td>
-            <td>@b.BowlerFirstName</td>
-            <td>@b.BowlerMiddleInit</td>
-            <td>@b.BowlerLastName</td>
-            <td>@b.BowlerAddress</td>
-            <td>@b.BowlerCity</td>
-            <td>@b.BowlerState</td>
-            <td>@b.BowlerZip</td>
-            <td>@b.BowlerPhoneNumber</td>
-            <td><a class="btn btn-light" href="#">Edit</a></td>
-        </tr>
+            <tr>
+                <td>@b.BowlerID</td>
+                <td>@b.BowlerFirstName</td>
+                <td>@b.BowlerMiddleInit</td>
+                <td>@b.BowlerLastName</td>
+                <td>@b.BowlerAddress</td>
+                <td>@b.BowlerCity</td>
+                <td>@b.BowlerState</td>
+                <td>@b.BowlerZip</td>
+                <td>@b.BowlerPhoneNumber</td>
+                <td><a class="btn btn-light" href="#">Edit</a></td>
+            </tr>
         }
     </tbody>
 </table>

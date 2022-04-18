@@ -12,18 +12,24 @@ namespace MySQLBowler.Controllers
 {
     public class HomeController : Controller
     {
-        private BowlerDbContext _context { get; set; }
+        //private BowlerDbContext _context { get; set; }
+        private IBowlerRepository _repo;
         //Constructor
-        public HomeController(BowlerDbContext temp)
+        /*public HomeController(BowlerDbContext temp)
         {
             _context = temp;
+        }*/
+        public HomeController(IBowlerRepository temp)
+        {
+            _repo = temp;
         }
 
-        public IActionResult Index()
+        public IActionResult Index(int teamType)
         {
-            var blah = _context.Bowlers
+            var blah = _repo.Bowlers
+                .Where(T => T.TeamID == teamType || teamType == 0)
                 //.Include(x => _context.Teams)
-                .FromSqlRaw("SELECT * FROM Bowlers")
+                //.FromSqlRaw("SELECT * FROM Bowlers")
                 .ToList();
 
             return View(blah);
@@ -41,8 +47,9 @@ namespace MySQLBowler.Controllers
         {
             if (ModelState.IsValid) 
             {
-                _context.Add(bnew);
-                _context.SaveChanges();
+                //FIX 
+                //_repo.CreateBowler(bnew);
+                //_context.SaveChanges();
                 return RedirectToAction("Index");
             }
             else

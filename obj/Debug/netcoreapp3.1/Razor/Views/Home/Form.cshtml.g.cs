@@ -13,21 +13,21 @@ namespace AspNetCore
     using Microsoft.AspNetCore.Mvc.Rendering;
     using Microsoft.AspNetCore.Mvc.ViewFeatures;
 #nullable restore
-#line 1 "C:\Users\tweet\source\repos\MySQLBowler\Views\_ViewImports.cshtml"
+#line 3 "C:\Users\tweet\source\repos\MySQLBowler\Views\_ViewImports.cshtml"
 using MySQLBowler;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "C:\Users\tweet\source\repos\MySQLBowler\Views\_ViewImports.cshtml"
+#line 4 "C:\Users\tweet\source\repos\MySQLBowler\Views\_ViewImports.cshtml"
 using MySQLBowler.Models;
 
 #line default
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"0abe4acb624cfcb6503214d845535d54f662a1e7", @"/Views/Home/Form.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"12e8a93d74e96854f01a1c040957c0b6d6d3388b", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"2607a37131c62926f9d019d820001a7d00258262", @"/Views/_ViewImports.cshtml")]
     public class Views_Home_Form : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<MySQLBowler.Models.Bowler>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("maxlength", new global::Microsoft.AspNetCore.Html.HtmlString("11"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);

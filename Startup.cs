@@ -33,6 +33,7 @@ namespace MySQLBowler
             });
 
             services.AddDbContext<BowlerDbContext>(options => options.UseMySql("Default"));
+            services.AddScoped<IBowlerRepository, EFBowlerRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
