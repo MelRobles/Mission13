@@ -34,6 +34,8 @@ namespace MySQLBowler
 
             services.AddDbContext<BowlerDbContext>(options => options.UseMySql("Default"));
             services.AddScoped<IBowlerRepository, EFBowlerRepository>();
+
+            services.AddRazorPages();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -60,7 +62,9 @@ namespace MySQLBowler
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
+                    pattern: "{controller=Home}/{action=Index}/{bId?}");
+
+                endpoints.MapRazorPages();
             });
         }
     }

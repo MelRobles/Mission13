@@ -2,43 +2,44 @@
 }
 
 @model IEnumerable<int>
+<div class="text-center">
 
-<a asp-controller="Home" asp-action="Index">Home</a>
-<br />
+    <a class="btn btn-outline-dark mx-5" style="width: 150px;" asp-controller="Home" asp-action="Index">Home</a><br /><br />
 
-@foreach (int t in Model)
-{
-    switch (t)
+    @foreach (int t in Model)
     {
-        case 1:
-            <a asp-controller="Home" asp-action="Index" asp-route-teamType="@t">Marlins</a>
-            break;
-        case 2:
-            <a asp-controller="Home" asp-action="Index" asp-route-teamType="@t">Sharks</a>
-            break;
-        case 3:
-            <a asp-controller="Home" asp-action="Index" asp-route-teamType="@t">Terrapins</a>
-            break;
-        case 4:
-            <a asp-controller="Home" asp-action="Index" asp-route-teamType="@t">Barracudas</a>
-            break;
-        case 5:
-            <a asp-controller="Home" asp-action="Index" asp-route-teamType="@t">Dolphins</a>
-            break;
-        case 6:
-            <a asp-controller="Home" asp-action="Index" asp-route-teamType="@t">Orcas</a>
-            break;
-        case 7:
-            <a asp-controller="Home" asp-action="Index" asp-route-teamType="@t">Manatees</a>
-            break;
-        case 8:
-            <a asp-controller="Home" asp-action="Index" asp-route-teamType="@t">Swordfish</a>
-            break;
-        case 9:
-            <a asp-controller="Home" asp-action="Index" asp-route-teamType="@t">Hunckleberrys</a>
-            break;
-        case 10:
-            <a asp-controller="Home" asp-action="Index" asp-route-teamType="@t">MintJuleps</a>
-            break;
+        switch (t)
+        {
+            case 1:
+                <a class="btn btn-outline-dark mx-5" style="width: 150px;" asp-controller="Home" asp-action="Index" asp-route-teamType="@t">Marlins</a>
+                break;
+            case 2:
+                <a class="btn btn-outline-dark mx-5" style="width: 150px;" asp-controller="Home" asp-action="Index" asp-route-teamType="@t">Sharks</a>
+                break;
+            case 3:
+                <a class="btn btn-outline-dark mx-5" style="width: 150px;" asp-controller="Home" asp-action="Index" asp-route-teamType="@t">Terrapins</a>
+                break;
+            case 4:
+                <a class="btn btn-outline-dark mx-5" style="width: 150px;" asp-controller="Home" asp-action="Index" asp-route-teamType="@t">Barracudas</a>
+                break;
+            case 5:
+                <a class="btn btn-outline-dark mx-5" style="width: 150px;" asp-controller="Home" asp-action="Index" asp-route-teamType="@t">Dolphins</a>
+                break;
+            case 6:
+                <a class="btn btn-outline-dark mx-5" style="width: 150px;" asp-controller="Home" asp-action="Index" asp-route-teamType="@t">Orcas</a>
+                break;
+            case 7:
+                <a class="btn btn-outline-dark mx-5" style="width: 150px;" asp-controller="Home" asp-action="Index" asp-route-teamType="@t">Manatees</a>
+                break;
+            case 8:
+                <a class="btn btn-outline-dark mx-5" style="width: 150px;" asp-controller="Home" asp-action="Index" asp-route-teamType="@t">Swordfish</a>
+                break;
+            case 9:
+                <a class="btn btn-outline-dark mx-5" style="width: 150px;" asp-controller="Home" asp-action="Index" asp-route-teamType="@t">Hunckleberrys</a>
+                break;
+            case 10:
+                <a class="btn btn-outline-dark mx-5" style="width: 150px;" asp-controller="Home" asp-action="Index" asp-route-teamType="@t">MintJuleps</a>
+                break;
+        }
     }
-}
+</div>

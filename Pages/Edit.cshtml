@@ -1,0 +1,45 @@
+﻿@page
+@model MySQLBowler.Models.Bowler
+@{
+}
+
+<div style="position: relative; width: 100%; height: 700px; display:flex; justify-content:center;">
+
+    <form method="post" class="form contactForm Form">
+
+        <div asp-validation-summary="All"></div>
+
+        <label asp-for="BowlerFirstName">First Name</label>
+        <input asp-for="BowlerFirstName" />
+        <br><br>
+        <label asp-for="BowlerMiddleInit">Middel Name</label>
+        <input asp-for="BowlerMiddleInit" />
+        <br><br>
+        <label asp-for="BowlerLastName">Last Name</label>
+        <input asp-for="BowlerLastName" />
+        <br><br>
+        <label asp-for="BowlerAddress">Address</label>
+        <input asp-for="BowlerAddress" />
+        <br><br>
+        <label asp-for="BowlerCity">City</label>
+        <input asp-for="BowlerCity" />
+        <br><br>
+        <label asp-for="BowlerState">State</label>
+        <input asp-for="BowlerState" />
+        <br><br />
+        <label asp-for="BowlerZip">Zip Code</label>
+        <input asp-for="BowlerZip" />
+        <br><br>
+        <label asp-for="BowlerPhoneNumber">Phone Number</label><br>
+        <input asp-for="BowlerPhoneNumber" maxlength="11" />
+        <br><br>
+        <label asp-for="TeamID">Bowler Team</label>
+        <select asp-for="TeamID">
+
+            <option value="">Select a Team</option>
+            <vc:team-id></vc:team-id>
+
+        </select>
+        <button class="btn btn-primary" type="submit">Submit</button>
+    </form>
+</div>

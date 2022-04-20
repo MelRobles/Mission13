@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using MySQLBowler.Models;
@@ -35,21 +36,55 @@ namespace MySQLBowler.Controllers
             return View(blah);
         }
 
+        //Gets list of teamid but not used in project, used viewcomponent instead
+        private IEnumerable<System.Collections.IList> GetTeamIdList()
+        {
+            var team = _repo.Bowlers
+                .Select(x => x.TeamID)
+                .Distinct()
+                .OrderBy(x => x)
+                .ToList();
+
+            var teamList = new List<System.Collections.IList>();
+
+            teamList.Add(team);
+
+            return (teamList);
+        }
+
         [HttpGet]
         public IActionResult Form() 
         {
-            //ViewBag.Teams = _context.Teams.ToList();
-            return View();
+            //var Tid = _repo.Bowlers
+            //    .Select(x => x.TeamID)
+            //    .Distinct()
+            //    .OrderBy(x => x)
+            //    .ToList();
+
+            //List<int> teamList = new List<int> {1, 2, 3, 4 };
+
+            //ViewBag.TeamID = GetTeamIdList();
+            ViewBag.Page = "New";
+            Bowler b = new Bowler();
+
+            return View(b);
         }
 
         [HttpPost]
-        public IActionResult Form(Bowler bnew) 
+        public IActionResult Form(Bowler b) 
         {
             if (ModelState.IsValid) 
             {
-                //FIX 
-                //_repo.CreateBowler(bnew);
-                //_context.SaveChanges();
+                if (b.BowlerID == 0)
+                {
+                    _repo.CreateBowler(b);
+                    _repo.SaveBowler(b);
+                }
+                else
+                {
+                    _repo.UpdateBowler(b);
+                    _repo.SaveBowler(b);
+                }
                 return RedirectToAction("Index");
             }
             else
@@ -58,6 +93,48 @@ namespace MySQLBowler.Controllers
                 return View("Form");
             }
             
+        }
+
+        [HttpGet]
+        public IActionResult Edit(int bId)
+        {
+            ViewBag.Page = "Edit";
+
+            var bowler = _repo.Bowlers.SingleOrDefault(x => x.BowlerID == bId);
+
+            return View("Form", bowler);
+        }
+
+        [HttpPost]
+        public IActionResult Edit(Bowler b)
+        {
+            if (ModelState.IsValid)
+            {
+                _repo.UpdateBowler(b);
+                _repo.SaveBowler(b);
+
+                return View("Index");
+            }
+            else
+            {
+                return View("Form", b);
+            }
+        }
+
+        [HttpGet]
+        public IActionResult Delete(int bId)
+        {
+            var bowler = _repo.Bowlers.Single(x => x.BowlerID == bId);
+            return View(bowler);
+        }
+        [HttpPost]
+        public IActionResult Delete(Bowler b)
+        {
+            _repo.DeleteBowler(b);
+            _repo.SaveBowler(b);
+
+            return View("Index");
+
         }
     }
 }

@@ -158,3 +158,14 @@ C:\Users\tweet\source\repos\MySQLBowler\bin\Debug\netcoreapp3.1\tr\Microsoft.Cod
 C:\Users\tweet\source\repos\MySQLBowler\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\tweet\source\repos\MySQLBowler\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\tweet\source\repos\MySQLBowler\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\Team\Default.cshtml.g.cs
+C:\Users\tweet\source\repos\MySQLBowler\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\TeamId\Default.cshtml.g.cs
+C:\Users\tweet\source\repos\MySQLBowler\obj\Debug\netcoreapp3.1\Razor\Pages\Edit.cshtml.g.cs
+C:\Users\tweet\source\repos\MySQLBowler\obj\Debug\netcoreapp3.1\Razor\Pages\_EditLayout.cshtml.g.cs
+C:\Users\tweet\source\repos\MySQLBowler\obj\Debug\netcoreapp3.1\Razor\Pages\_ViewImports.cshtml.g.cs
+C:\Users\tweet\source\repos\MySQLBowler\obj\Debug\netcoreapp3.1\Razor\Pages\_ViewStart.cshtml.g.cs
+C:\Users\tweet\source\repos\MySQLBowler\obj\Debug\netcoreapp3.1\MySQLBowler.RazorComponent.input.cache
+C:\Users\tweet\source\repos\MySQLBowler\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\_Imports.razor.g.cs
+C:\Users\tweet\source\repos\MySQLBowler\obj\Debug\netcoreapp3.1\MySQLBowler.RazorComponent.output.cache
+C:\Users\tweet\source\repos\MySQLBowler\obj\Debug\netcoreapp3.1\RazorDeclaration\MySQLBowler.dll
+C:\Users\tweet\source\repos\MySQLBowler\obj\Debug\netcoreapp3.1\Razor\Pages\_Imports.razor.g.cs
+C:\Users\tweet\source\repos\MySQLBowler\obj\Debug\netcoreapp3.1\Razor\Views\Home\Delete.cshtml.g.cs

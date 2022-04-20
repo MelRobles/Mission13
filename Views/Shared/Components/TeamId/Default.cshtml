@@ -1,0 +1,42 @@
+﻿@{
+}
+
+@model IEnumerable<int>
+
+@foreach (int t in Model)
+{
+    switch (t)
+    {
+        case 1:
+            <option value="@t" >Marlins</option>
+            break;
+        case 2:
+            <option value="@t">Sharks</option>
+            break;
+        case 3:
+            <option value="@t">Terrapins</option>
+            break;
+        case 4:
+            <option value="@t">Barracudas</option>
+            break;
+        case 5:
+            <option value="@t">Dolphins</option>
+            break;
+        case 6:
+            <option value="@t">Orcas</option>
+            break;
+        case 7:
+            <option value="@t">Manatees</option>
+            break;
+        case 8:
+            <option value="@t">Swordfish</option>
+            break;
+        case 9:
+            <option value="@t">Hunckleberrys</option>
+            break;
+        case 10:
+            <option value="@t">MintJuleps</option>
+            break;
+    }
+}
+

@@ -5,6 +5,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Migrations\20220420161523_AutoGenerateKey.cs" />
+    <Compile Remove="Migrations\20220420161523_AutoGenerateKey.Designer.cs" />
+    <Compile Remove="Migrations\20220420161605_AutoGenerateKey.cs" />
+    <Compile Remove="Migrations\20220420161605_AutoGenerateKey.Designer.cs" />
+    <Compile Remove="Migrations\20220420162544_AutoGen2.cs" />
+    <Compile Remove="Migrations\20220420162544_AutoGen2.Designer.cs" />
+    <Compile Remove="Migrations\20220420165139_Initial.cs" />
+    <Compile Remove="Migrations\20220420165139_Initial.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.22" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.22">
       <PrivateAssets>all</PrivateAssets>
